@@ -1,0 +1,34 @@
+.clsDivContent {
+  display: flex;
+  position: absolute;
+  top: 10%;
+}
+
+.clsDivHeader {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.clsDivCampeoes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 15px;
+}
+
+.imgCard {
+  inline-size: auto;
+}
+
+.clsDivSpinner {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.clsSpinner {
+  top: 50%;
+  left: 50%;
+}

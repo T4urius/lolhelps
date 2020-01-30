@@ -1,0 +1,21 @@
+<div class="clsDivHeader">
+    <mat-card>
+        <mat-card-title>
+            Lista Campeões
+        </mat-card-title>
+    </mat-card>
+</div>
+<div class="clsDivContent">
+    <div class="clsDivCampeoes">
+        <mat-card [id]="i" class="clsCardCampeoes" *ngFor="let image of images, let i = index"
+            (click)="click(campeao, i, $event)">
+            <mat-card-content class="clsCardContentCampeoes">
+                <img class="imgCard" mat-card-image [src]="image">
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<div *ngIf="imgExist" class="clsDivSpinner">
+    <mat-spinner class="clsSpinner"></mat-spinner>
+</div>
